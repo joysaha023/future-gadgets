@@ -62,6 +62,15 @@ const handleShowDetails = async (id) => {
 
 const showPhoneDetails = (phone) => {
     console.log(phone);
+    const phoneName = document.getElementById('modal-phone-name')
+    phoneName.innerText = phone.name
+
+    const showDetailsContainer = document.getElementById('show-modal-detail-container');
+    showDetailsContainer.innerHTML = `
+        <img src="${phone.image}" alt="" />
+        <p><span>Storage:</span>${phone.mainFeatures.storage}</p>
+    `;
+
     show_details_modal.showModal()
 }
 
