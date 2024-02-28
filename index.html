@@ -32,7 +32,13 @@
     </div>
     <main class="container-self poppins">
         <section>
-            <h1>Search your phone</h1>
+            
+            <div class="p-4 m-4">
+                <input id="search-field" type="text" placeholder="Search...." class="input input-bordered w-full max-w-xs" />
+                <button onclick="handleSearch()" class="btn btn-accent">Search</button>
+            </div>
+            
+            <!-- search result -->
             <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <!-- <div class="card w-96 bg-base-100 shadow-xl">
                     <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
@@ -48,7 +54,7 @@
         </section>
     </main>
     <footer class="container-self poppins">
-        <button onclick="chekcFn()">cclick</button>
+        
     </footer>
 
 
