@@ -10,6 +10,20 @@ const displayPhones = phones =>{
 
     const phoneContainer = document.getElementById('phone-container')
     phoneContainer.textContent = '';
+
+
+    //display show all button if there are more than 12 phones
+    const showAllContainer = document.getElementById('show-all-container')
+    if(phones.length > 12){
+        showAllContainer.classList.remove('hidden');
+    }
+    else{
+        showAllContainer.classList.add('hidden');
+    }
+
+
+    //display only first 12 phone
+    phones = phones.slice(0, 12);
     
     phones.forEach(element => {
         
